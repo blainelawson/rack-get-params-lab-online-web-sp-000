@@ -28,6 +28,7 @@ class Application
       # binding.pry
       if @@items.include?(item)
         @@cart << item
+        resp.write "added Figs"
       else
         resp.write "We don't have that item"
       end
